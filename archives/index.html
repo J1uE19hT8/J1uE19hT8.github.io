@@ -45,7 +45,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="" class="profilepic">
-			<img src="“https://avatars0.githubusercontent.com/u/23138610?v=4&amp;s=400&amp;u=831c3153e0ed333855be1f50e995cfb468b85328”" class="js-avatar">
+			<img src="https://avatars0.githubusercontent.com/u/23138610?v=4&amp;s=400&amp;u=831c3153e0ed333855be1f50e995cfb468b85328" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="">N1n3E19hT8</a></h1>
@@ -59,6 +59,8 @@
 			
 				<li><a href="/">主页</a></li>
 	        
+				<li><a href="/tags/随笔/">随笔</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -68,7 +70,7 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -80,8 +82,6 @@
 					<a class="weibo" target="_blank" href="https://weibo.com/235789251" title="weibo"><i class="icon-weibo"></i></a>
 		        
 					<a class="bilibili" target="_blank" href="https://space.bilibili.com/14890379" title="bilibili"><i class="icon-bilibili"></i></a>
-		        
-					<a class="mail" target="_blank" href="mailto:776521371@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -99,7 +99,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="“https://avatars0.githubusercontent.com/u/23138610?v=4&amp;s=400&amp;u=831c3153e0ed333855be1f50e995cfb468b85328”" class="js-avatar">
+				<img src="https://avatars0.githubusercontent.com/u/23138610?v=4&amp;s=400&amp;u=831c3153e0ed333855be1f50e995cfb468b85328" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">N1n3E19hT8</h1>
@@ -108,6 +108,8 @@
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i>性格怪癖，处之不易<i class="icon icon-quo-right"></i></p>
 			
 			
+			
+				
 			
 				
 			
@@ -122,8 +124,6 @@
 			        
 						<a class="bilibili" target="_blank" href="https://space.bilibili.com/14890379" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
-						<a class="mail" target="_blank" href="mailto:776521371@qq.com" title="mail"><i class="icon-mail"></i></a>
-			        
 				</div>
 			</nav>
 
@@ -131,7 +131,9 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 100%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
+		        
+					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -176,6 +178,21 @@
 
         <div class="article-info info-on-right">
           
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">calssic</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">鸡汤</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
           
 
         </div>
@@ -252,7 +269,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
       
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -271,6 +288,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">calssic</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">鸡汤</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -316,39 +341,13 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://music.w1k1.kiwi/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>音乐搜索器</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://movie.w1k1.kiwi/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>星星影院</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://假如.我爱你/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>STAR影院</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://photo.w1k1.kiwi/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>电脑壁纸</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://make.w1k1.kiwi/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>在线制作</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://w1k1.kiwi/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>H‘s Blog</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">N1n3E19hT8&lt;br&gt;&lt;br&gt;竖子不得草根志&lt;br&gt;碌碌无为而立年&lt;br&gt;&lt;br&gt;生活不止眼前的苟且&lt;br&gt;还有诗和远方</div>
+  	  	
+    	</section>
     
   </div>
   
